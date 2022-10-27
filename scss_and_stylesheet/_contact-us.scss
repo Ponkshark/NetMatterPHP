@@ -1,0 +1,499 @@
+.top-margin {
+    height: 0px;
+}
+
+.breadcrumb-cont {
+    margin-top: 25px;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 5px 35px  rgb(0 0 0 / 10%);
+    a {
+        color: #333645;
+        font-weight: 700;
+        font-size: 13px;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .breadcrumb-text {
+        width: 1170px;
+        padding: 14px 0px;
+        #breadtext-2 {
+            font-size: 13px;
+        }
+
+    }
+}
+
+.our-offices-cont{
+    display: flex;
+    justify-content: center;
+    padding-top: 55px;
+    padding-bottom: 76px;
+    .our-offices-text{
+        width: 1170px;
+        h1 {
+            font-size: 36px;
+            color: $off-black;
+            font-weight: 400;
+        }
+    }
+}
+
+.location-cont{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    .location-item{
+        width: 368px;
+        img {
+            width: 368px;
+            cursor: pointer;
+        }
+        #location-1-inner, #location-2-inner, #location-3-inner {
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            transition: .5s ease;
+            box-shadow: 0px 5px 35px  rgb(0 0 0 / 10%);
+        }
+        #location-1-inner:hover, #location-2-inner:hover, #location-3-inner:hover {
+            transform: translateY(-10px);
+            transition: .5s ease;
+        }
+        .location-content{
+            padding: 30px;
+            a {
+                color: $off-black;
+                font-size: 18px;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            p {
+                color: #666666;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 1.375rem;
+                padding-top: 10px;
+                padding-bottom: 15px;
+            }
+            .location-phone {
+                color: #926fb1;
+                font-size: 26px;
+                font-weight: 700;
+            }
+            .location-but{
+                padding: 16px 31px;
+                background-color: #926fb1;
+                border-color: #926fb1;
+                text-transform: uppercase;
+                border-radius: 3px;
+                text-align: center;
+                cursor: pointer;
+                color: $white;
+                font-size: 14.4px;
+                box-sizing: border-box;
+                border-style: none;
+                margin-top: 15px;
+            }
+            .location-but:hover {
+                background-color: #7e57a0;
+                border-color: #735093;
+            }
+        }
+    }
+    
+}
+
+.contact-form-cont{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.form-item-1{
+    background-color: #e6e7e9;
+    border-radius: 10px;
+    padding: 30px;
+    width: 770px;
+    
+    .name-email-cont2{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 20px 30px;
+    }
+
+    .name-email-item2 {
+
+        textarea{
+            padding: 10px 15px !important;
+        }
+
+        #yourname2, #youremail2, #yourcompany, #yourtelephone {
+            color: #555;
+            padding: 5px 15px;
+            height: 47px;
+            width: 340px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+            transition: border-color 0.15s;
+            margin-top: 5px;
+        }
+
+        #yoursubject {
+            color: #555;
+            padding: 5px 15px;
+            height: 47px;
+            width: 710px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+            transition: border-color 0.15s;
+            margin-top: 5px;
+        }
+
+        #yourmessage {
+            color: #555;
+            padding: 5px 15px;
+            height: 100px;
+            width: 710px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+            transition: border-color 0.15s;
+            margin-top: 5px;
+        }
+
+        #yourname2:focus, #youremail2:focus, #yourcompany:focus, #yourtelephone:focus, #yoursubject:focus, #yourmessage:focus {
+            border-color: #5bc0de;
+            outline: 0;
+            box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(91 192 222 / 60%);
+        }
+
+        .required:after {
+            font-weight: 100;
+            content:" *";
+            color: #d24d57;
+        }
+
+        label {
+            font-weight: 600;
+            color: $off-black;
+            margin-bottom: 5px;
+        }
+
+    }
+
+    .checkbox-item2 {
+        color: $off-black;
+        font-weight: 600;
+        cursor: pointer;
+        a {
+            color: $off-black;
+        }
+    }
+
+    .check-text {
+        line-height: 32px;
+    }
+
+    #check-but-id{
+        margin-bottom: 50px;
+    }
+}
+
+.checkbox-item2:hover, input ~ .check-but {
+    background-color: transparent;
+}
+
+.checkbox-item2 input:active ~ .check-but {
+    background-color: $off-black;
+}
+
+.checkbox-item2 input:checked ~ .check-but {
+    background-color: $off-black;
+}
+
+.checkbox-item2 input:checked ~ .check-but:after {
+    display: block;
+}
+
+.checkbox-item2 .check-but:after {
+    left: 9px;
+    bottom: 7px;
+    width: 5px;
+    height: 13px;
+    border: solid $white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.form-item-2 {
+    width: 370px;
+    margin-left: 30px;
+    margin-top: -10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: $off-black;
+    line-height: 3.5rem;
+    .form-item-2-sales {
+        color: #926fb1;
+        font-size: 26px;
+        text-decoration: none;
+    }
+    .form-item-2-sales:hover {
+        text-decoration: underline;
+    }
+    .form-item-2-ofh {
+        text-decoration: none;
+        color: $off-black;
+    }
+    .form-item-2-ofh:hover {
+        text-decoration: underline;
+    }
+}
+
+.contact-form-lower{
+    display: flex;
+    justify-content: space-between;
+    width: 710px;
+}
+
+.enquiry-but{
+    color: #fff;
+    background-color: #926fb1;
+    border-color: #926fb1;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 17px;
+    border-radius: 3px;
+    border-style: none;
+    &:hover {
+        background-color: #7e57a0;
+        border-color: #735093;
+    }
+}
+
+.fields-req-item{
+    color: $off-black;
+    font-size: 13px;
+    line-height: 50px;
+}
+
+.fields-req-item:before {
+    font-weight: 100;
+    content:"* ";
+    color: #a94442;
+}
+
+#contact-success {
+    font-size: 12px;
+    color: forestgreen;
+    text-align: center;
+    width: 710px;
+}
+
+/*! Media Queries */
+
+@media only screen and (max-width: 1260px) {
+
+    .breadcrumb-cont {
+        z-index: 50000;
+        .breadcrumb-text {
+        width: 940px;
+        }
+    }
+
+    .our-offices-cont {
+        .our-offices-text{
+            width: 940px;
+        }
+    }
+    .location-cont {
+        .location-item {
+            width: 291.33px;
+            img {
+                width: 291.33px;
+            }
+        }
+    }
+
+    iframe {
+        width: 291.33px;
+    }  
+
+    .form-item-1 {
+        width: 940px;
+        .name-email-item2 {
+            #yourname2, #youremail2, #yourcompany, #yourtelephone {
+                width: 425px;
+            }
+            #yoursubject, #yourmessage {
+                width: 880px;
+            }
+
+            
+        }
+        .contact-form-lower {
+            width: 880px;
+        }
+    }
+
+    .form-item-2 {
+        margin: -15px 15px 10px;
+        order: -2;
+        width: 940px;
+    }  
+
+    
+}
+  
+@media only screen and (min-width: 1260px) {
+    
+}
+
+@media only screen and (max-width: 992px) {
+
+    .breadcrumb-cont {
+        border-top: 1px solid #333645;
+        .breadcrumb-text {
+        margin-left: 15px;
+        width: 735px;
+        }
+    }
+
+    .our-offices-cont{
+        background-color: $off-black;
+        height: 87.6px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 80px;
+        .our-offices-text{
+            margin-left: 15px;
+            width: 745px;
+            line-height: 90px;
+            h1 {
+                color: $white;
+            }
+        }
+    }
+
+    .location-cont {
+        .location-item {
+            width: 718px;
+            img {
+                width: 718px;
+            }
+        }
+    }
+
+    iframe {
+        width: 718px;
+    }
+
+    .form-item-1 {
+        width: 720px;
+        border: 0px 15px 10px;
+
+
+        .name-email-cont2 {
+            justify-content: flex-start;
+        }
+
+        .name-email-item2 {
+            #yourname2, #youremail2, #yourcompany, #yourtelephone {
+                width: 660px;
+                max-width: 660px;
+            }
+
+            #yoursubject, #yourmessage {
+                width: 660px;
+                max-width: 660px;
+            }
+
+            
+        }
+
+        .contact-form-lower {
+            width: 880px;
+        }
+    }
+
+    .form-item-2 {
+        margin: -15px 15px 10px;
+        order: -2;
+        max-width: 720px;
+    }  
+}
+
+@media only screen and (min-width: 992px) {
+    .breadcrumb-cont {
+        border-top: 0px solid #333645;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .location-cont {
+        .location-item {
+            width: 95%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .form-item-1 {
+        max-width: 95%;
+
+        .name-email-cont2 {
+            display: block;
+        }
+
+        .name-email-item2 {
+            margin-bottom: 20px;
+            #yourname2, #youremail2, #yourcompany, #yourtelephone {
+                width: 100%;
+            }
+            #yoursubject, #yourmessage {
+                width: 100%;
+            }
+        }
+
+        .contact-form-lower {
+            margin-top: 25px;
+        }
+
+        
+    }
+}
+
+@media only screen and (min-width: 767px) {
+
+}
+
+@media only screen and (max-width: 676px) {
+    .form-item-1 {
+        #check-but-id{
+            margin-bottom: 80px;
+        }
+    }
+}
+
+
+
