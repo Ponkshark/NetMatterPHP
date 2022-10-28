@@ -18,12 +18,12 @@
     background-color: #333645;
     border: 0;
     margin: 0;
-    transform: translateY(2px);
+    transform: translateY(4px);
     overflow: visible; }
     .hamburger:hover {
-      opacity: 0.7; }
+      background-color: #22242e; }
     .hamburger.is-active:hover {
-      opacity: 0.7; }
+      background-color: #22242e; }
     .hamburger.is-active .hamburger-inner,
     .hamburger.is-active .hamburger-inner::before,
     .hamburger.is-active .hamburger-inner::after {

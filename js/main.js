@@ -48,7 +48,7 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("sidebar-inner-id").style.right = "-350px";
-  document.getElementById("body-id").style.marginRight = "0";
+  document.getElementById("body-id").style.marginRight = "-20px";
   document.getElementById("body-id").style.marginLeft = "0";
   document.getElementById("body-id").style.overflow = "scroll";
   document.getElementById("body-id").style.overflowX = "hidden";
@@ -60,8 +60,10 @@ function myFunction() {
   if (!document.cookie.split('; ').find(row => row.startsWith('cookies=accepted'))){ 
     document.getElementById("myDialog").showModal(); 
     document.getElementById("body-id").style.overflow = "hidden";
+    document.body.style.position = "fixed";
   }
 } 
+
 
 document.addEventListener("load", myFunction());
 
@@ -69,6 +71,7 @@ function createCookie() {
   document.cookie = "cookies=accepted; max-age=86400; path=/";
   document.getElementById("body-id").style.overflow = "visible";
   document.getElementById("body-id").style.overflowX = "hidden";
+  document.body.style.position = "static";
 }
 
 //Takes window to the top on reload

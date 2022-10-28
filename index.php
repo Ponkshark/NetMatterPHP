@@ -44,7 +44,7 @@
 <div class="serv-container">
     <h2 class="serv-header" style="margin-top: 50px;">
         <span><strong>Our Services</strong></span>
-        <span id="service-view"><h3 class="service-link"><a href="#">View All&nbsp;<i class="fa-solid fa-arrow-right"></i></a></h3></span>
+        <span id="service-view" class="service-link"><a href="#">View All&nbsp;<i class="fa-solid fa-arrow-right"></i></a></span>
     </h2>
     <div class= "serv-block" id="serv-block-1" onclick="location.href='#';">
             <span class="icon-1-span" id="serv-icon-circle-1">
@@ -167,14 +167,14 @@
 <?php 
 function OpenCon(){
     // My local cpanel host
-    // $servername = "localhost";
-    // $username = "root";
-    // $password = "";
-    // $dbname = "contact_details";
     $servername = "localhost";
-    $username = "kylewarf_kylewarford";
-    $password = "u2FQhn6ip6DzSLc";
-    $dbname = "kylewarf_portfolio";
+    $username = "root";
+    $password = "";
+    $dbname = "contact_details";
+    // $servername = "localhost";
+    // $username = "kylewarf_kylewarford";
+    // $password = "u2FQhn6ip6DzSLc";
+    // $dbname = "kylewarf_portfolio";
     // Create connection
     $conn = new mysqli($servername,
         $username, $password, $dbname);

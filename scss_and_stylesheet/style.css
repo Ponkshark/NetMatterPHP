@@ -133,7 +133,7 @@ body {
   font-size: 18px;
   width: 63px;
   padding: 7px 20px;
-  margin-left: -5px;
+  margin-left: 0px;
   margin-right: 15px;
   border: 0px solid transparent;
   background-color: #999aa2;
@@ -1277,6 +1277,9 @@ input[type=checkbox] {
   #query, #telephone-btn {
     display: none;
   }
+  #search-btn {
+    margin-left: -5px;
+  }
   #header-img {
     max-height: 80%;
   }
@@ -1568,6 +1571,9 @@ input[type=checkbox] {
   .info-text p {
     font-size: 1.625rem;
     line-height: 2.5rem;
+  }
+  #search-btn {
+    margin-left: -5px;
   }
 }
 @media only screen and (min-width: 767px) {
