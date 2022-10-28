@@ -55,23 +55,33 @@ if(isset($_POST["submit"]))
         if($name_error == '<input type="text" id="yourname2" name="yourname2"><br>' && $email_error == '<input type="text" id="youremail2" name="youremail2"><br>' && $phone_error == '<input type="text" id="yourtelephone" name="yourtelephone"><br>' && $subject_error == '<input type="text" id="yoursubject" name="yoursubject"><br>' && $message_error == '<textarea id="yourmessage" name="yourmessage"></textarea><br>')  
         {  
 
-            //Connecting to a database
+            
+            //Function to open the connection to my contact_details database
+            function OpenCon(){
+                // My local cpanel host
+                // $servername = "localhost";
+                // $username = "root";
+                // $password = "";
+                // $dbname = "contact_details";
+                $servername = "localhost";
+                $username = "kylewarf_kylewarford";
+                $password = "u2FQhn6ip6DzSLc";
+                $dbname = "kylewarf_portfolio";
+                // Create connection
+                $conn = new mysqli($servername,
+                    $username, $password, $dbname);
 
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $dbname = "contact_details";
-            //var_dump($_POST);
-            // Create connection
-            $conn = mysqli_connect($servername,
-                $username, $password, $dbname);
-
-            // Check connection
-            if ($conn->connect_error) {
-                die("Connection failed: "
-                    . mysqli_connect_error());
+                return $conn;
+            }
+            //Function to close the connection
+            function CloseCon($conn)
+            {
+                $conn -> close();
             }
 
+            //Open the connection
+            $conn = OpenCon();
+            //Retrive the form data
             $sup_name =  $_POST["yourname2"];
             $sup_company = $_POST["yourcompany"];
             $sup_email = $_POST["youremail2"];
@@ -79,23 +89,18 @@ if(isset($_POST["submit"]))
             $sup_subject = $_POST["yoursubject"];
             $sup_message = $_POST["yourmessage"];
 
-            var_dump($sup_name);
-            var_dump($sup_company);
-            var_dump($sup_email);
-            var_dump($sup_phone);
-            var_dump($sup_subject);
-            var_dump($sup_message);
-
+            //Insert form data into the table
             $sql = "INSERT INTO customer_details VALUES ('$sup_name',
             '$sup_company','$sup_email','$sup_phone','$sup_subject','$sup_message')";
+            $result = $conn->query($sql);
+            //Close the connection
+            CloseCon($conn);
 
             $output = '<p id="contact-success">Form submitted successfully</p>';
         }       
 }  
 
      
-// Close connection
-//mysqli_close($conn);
 
 ?>  
 
@@ -238,7 +243,18 @@ if(isset($_POST["submit"]))
         <a href="#" class="form-item-2-sales">sales@netmatters.com<br></a>
         Business hours:<br>
         Monday - Friday 07:00 - 18:00<br>
-        <a href="#" class="form-item-2-ofh">Out of Hours IT Support <i class="fa-solid fa-chevron-down"></i></a>
+        <p class="form-item-2-ofh" onclick="ITDropdown();">Out of Hours IT Support <i class="fa-solid fa-chevron-down"></i></p>
+        <div class="it-dropdown" id="it-dropdown-id">
+        
+            <p id="it-light">Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p><br>
+            
+                <strong>Monday - Friday 18:00 - 22:00</strong>
+                <strong>Saturday 08:00 - 16:00</strong>
+                <br>
+                <strong>Sunday 10:00 - 18:00</strong><br><br>
+            
+            <p id="it-light">To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours&nbsp; voicemail. A technician will contact you on the number provided within 45 minutes of your call.&nbsp;</p>
+        </div>
     </div>
 </div>
 

@@ -423,43 +423,43 @@ body {
 .serv-container #serv-icon-1, .serv-container #serv-icon-2, .serv-container #serv-icon-3, .serv-container #serv-icon-4, .serv-container #serv-icon-5, .serv-container #serv-icon-6, .serv-container #serv-icon-7 {
   color: #fff;
   width: 65px;
-  font-size: 0.6em;
+  font-size: 0.45em;
   vertical-align: 5px;
 }
 .serv-container .icon-1-span {
   background-color: #67809f;
   border-radius: 50%;
-  font-size: 2.9em;
+  font-size: 3.9em;
 }
 .serv-container .icon-2-span {
   background-color: #4183d7;
   border-radius: 50%;
-  font-size: 2.9em;
+  font-size: 3.9em;
 }
 .serv-container .icon-3-span {
   background-color: #2ecc71;
   border-radius: 50%;
-  font-size: 2.9em;
+  font-size: 3.9em;
 }
 .serv-container .icon-4-span {
   background-color: #d64541;
   border-radius: 50%;
-  font-size: 2.9em;
+  font-size: 3.9em;
 }
 .serv-container .icon-5-span {
   background-color: #926fa7;
   border-radius: 50%;
-  font-size: 2.9em;
+  font-size: 3.9em;
 }
 .serv-container .icon-6-span {
   background-color: #f62459;
   border-radius: 50%;
-  font-size: 2.9em;
+  font-size: 3.9em;
 }
 .serv-container .icon-7-span {
   background-color: #ce4125;
   border-radius: 50%;
-  font-size: 2.9em;
+  font-size: 3.9em;
 }
 .serv-container #serv-block-1, .serv-container #serv-block-2, .serv-container #serv-block-3 {
   display: block;
@@ -2131,6 +2131,28 @@ dialog::backdrop {
   font-size: 16px;
   color: #333645;
   line-height: 3.5rem;
+}
+.form-item-2 p {
+  font-size: 16px;
+  color: #333645;
+}
+.form-item-2 .form-item-2-ofh {
+  cursor: pointer;
+}
+.form-item-2 .it-dropdown {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.875rem;
+  height: 370px;
+}
+.form-item-2 .it-dropdown p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.875rem;
+  color: #666666;
+}
+.form-item-2 #it-dropdown-id {
+  display: block;
 }
 .form-item-2 .form-item-2-sales {
   color: #926fb1;

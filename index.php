@@ -164,50 +164,86 @@
     <h3 class="news-link" style="margin-top: 50px;"><a href="#">View All&nbsp;<i class="fa-solid fa-arrow-right"></i></a></h3>
 </div>
 
+<?php 
+function OpenCon(){
+    // My local cpanel host
+    // $servername = "localhost";
+    // $username = "root";
+    // $password = "";
+    // $dbname = "contact_details";
+    $servername = "localhost";
+    $username = "kylewarf_kylewarford";
+    $password = "u2FQhn6ip6DzSLc";
+    $dbname = "kylewarf_portfolio";
+    // Create connection
+    $conn = new mysqli($servername,
+        $username, $password, $dbname);
+
+    return $conn;
+    }
+
+//Function to close the connection
+function CloseCon($conn)
+{
+    $conn -> close();
+}    
+
+$conn = OpenCon();
+
+$sql2 = "SELECT * FROM `news-items`";
+$result = $conn -> query($sql2);
+
+
+$row = [[]];
+for($i=1; $i<4; $i++) {
+    array_push($row, mysqli_fetch_array($result, MYSQLI_NUM));
+}
+
+?>
+
 <div class="news-container">
     <div class="news-box-1" id="news-box-id-1" onclick="location.href='#';">
         <div class="news-img-cont">
-        <a href="#"><img class="news-big-img" src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/business-development-account-zUub.jpg" alt="Now Hiring image"></a>
-        <a href="#" class="news-img-link-1">CAREERS</a>
+        <a href="#"><img class="news-big-img" src="<?php echo($row[1][1]) ?>" alt="Now Hiring image"></a>
+        <a href="#" class="news-img-link-1"><?php echo($row[1][2]) ?></a>
         </div>
         <div class="news-block-1">
-            <h3 id="news-block-title-1" style="margin-bottom: 15px;">Business Development Account Manager</h3>
-            <p style="margin-bottom: 25px;">Salary Range £35k+ per annum + Bonus + Benefits Hours 40 hours per week, 
-                Mon - Fri Location Wymondha...</p>
+            <h3 id="news-block-title-1" style="margin-bottom: 15px;"><?php echo($row[1][3]) ?></h3>
+            <p style="margin-bottom: 25px;"><?php echo($row[1][4]) ?></p>
             <button class="news-but-1">READ MORE</button>
             <div class="user-1" style="margin-top: 30px; padding-top: 30px">
-                <img src="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/elliott-peacock-w8vu.jpg" alt="Picture of Elliott Peacock">
-                <p class="user-name"><strong>Posted by Elliott Peacock</strong><br>9th August 2022</p>
+                <img src="<?php echo($row[1][5]) ?>" alt="Picture of Elliott Peacock">
+                <p class="user-name"><strong><?php echo($row[1][6]) ?></strong><br><?php echo($row[1][7]) ?></p>
             </div>
         </div>
     </div>
     <div class="news-box-2" id="news-box-id-2" onclick="location.href='#';">
         <div class="news-img-cont">
-        <a href="#"><img class="news-big-img" src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/the-risks-of-kEsp.jpg" alt="The risks of not being cookie compliant image"></a>
-        <a href="#" class="news-img-link-2">NEWS</a>
+        <a href="#"><img class="news-big-img" src="<?php echo($row[2][1]) ?>" alt="The risks of not being cookie compliant image"></a>
+        <a href="#" class="news-img-link-2"><?php echo($row[2][2]) ?></a>
         </div>
         <div class="news-block-2">
-            <h3 id="news-block-title-2" style="margin-bottom: 15px;">The Risks Of Not Being Cookie Compliant</h3>
-            <p style="margin-bottom: 25px;">Are You Cookie Compliant? We've all heard of website cookies. Most people understand the premise of...</p>
+            <h3 id="news-block-title-2" style="margin-bottom: 15px;"><?php echo($row[2][3]) ?></h3>
+            <p style="margin-bottom: 25px;"><?php echo($row[2][4]) ?></p>
             <button class="news-but-2">READ MORE</button>
             <div class="user-2" style="margin-top: 30px; padding-top: 30px">
-                <img src="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/netmatters-ltd-VXAv.png" alt="Netmatters logo">
-                <p class="user-name"><strong>Posted by Netmatters</strong><br>4th August 2022</p>
+                <img src="<?php echo($row[2][5]) ?>" alt="Netmatters logo">
+                <p class="user-name"><strong><?php echo($row[2][6]) ?></strong><br><?php echo($row[2][7]) ?></p>
             </div>
         </div>
     </div>
     <div class="news-box-3" id="news-box-id-3" onclick="location.href='#';">
         <div class="news-img-cont">
-        <a href="#"><img class="news-big-img" src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/netmatters-road-to-MEcu.jpg" alt="Netmatters road to net zero image"></a>
-        <a href="#" class="news-img-link-2">NEWS</a>
+        <a href="#"><img class="news-big-img" src="<?php echo($row[3][1]) ?>" alt="Netmatters road to net zero image"></a>
+        <a href="#" class="news-img-link-2"><?php echo($row[3][2]) ?></a>
         </div>
         <div class="news-block-3">
-            <h3 id="news-block-title-3" style="margin-bottom: 15px;">Netmatters Road To Net Zero</h3>
-            <p style="margin-bottom: 25px;">Driving through our 'Road to Net Zero' We have some fantastic news to share regarding our latest add...</p>
+            <h3 id="news-block-title-3" style="margin-bottom: 15px;"><?php echo($row[3][3]) ?></h3>
+            <p style="margin-bottom: 25px;"><?php echo($row[3][4]) ?></p>
             <button class="news-but-3">READ MORE</button>
             <div class="user-3" style="margin-top: 30px; padding-top: 30px">
-                <img src="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/netmatters-ltd-VXAv.png" alt="Netmatters logo">
-                <p class="user-name"><strong>Posted by Netmatters</strong><br>3rd August 2022</p>
+                <img src="<?php echo($row[3][5]) ?>" alt="Netmatters logo">
+                <p class="user-name"><strong><?php echo($row[3][6]) ?></strong><br><?php echo($row[3][7]) ?></p>
             </div>
         </div>
     </div>

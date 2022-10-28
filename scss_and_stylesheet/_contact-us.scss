@@ -246,6 +246,29 @@
     font-size: 16px;
     color: $off-black;
     line-height: 3.5rem;
+    p {
+        font-size: 16px;
+        color: $off-black;
+    }
+    .form-item-2-ofh {
+        cursor: pointer;
+    }
+    .it-dropdown {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.875rem;
+        height: 370px;
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.875rem;
+            color: #666666;
+        }
+        
+    }
+    #it-dropdown-id {
+        display: block;
+    }
     .form-item-2-sales {
         color: #926fb1;
         font-size: 26px;

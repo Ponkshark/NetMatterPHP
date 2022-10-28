@@ -77,3 +77,12 @@ window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
 
+function ITDropdown(){
+  if (document.getElementById("it-dropdown-id").style.display == "none"){
+  document.getElementById("it-dropdown-id").style.display = "block";
+  }
+  else{
+  document.getElementById("it-dropdown-id").style.display = "none";
+  }
+}
+
