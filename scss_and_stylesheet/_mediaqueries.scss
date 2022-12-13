@@ -5,6 +5,10 @@
       display: none;
     }
 
+    #search-btn {
+        margin-left: -5px;
+     }
+
     #header-img {
         max-height: 80%;
     }
@@ -422,6 +426,10 @@
             font-size: 1.625rem;
             line-height: 2.5rem;
         }
+     }
+
+     #search-btn {
+        margin-left: -5px;
      }
 }
 
