@@ -2159,7 +2159,11 @@ dialog::backdrop {
   color: #666666;
 }
 .form-item-2 #it-dropdown-id {
+<<<<<<< HEAD
   display: none;
+=======
+  display: block;
+>>>>>>> 1025cdcb92a20b28fc91f5b3c3799e371ab96c04
 }
 .form-item-2 .form-item-2-sales {
   color: #926fb1;
@@ -2195,7 +2199,10 @@ dialog::backdrop {
   border-style: none;
 }
 .enquiry-but:hover {
+<<<<<<< HEAD
   cursor: pointer;
+=======
+>>>>>>> 1025cdcb92a20b28fc91f5b3c3799e371ab96c04
   background-color: #7e57a0;
   border-color: #735093;
 }
