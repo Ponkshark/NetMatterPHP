@@ -26,7 +26,7 @@ body {
   transition: top 0.2s ease-in-out;
   background-color: white;
   z-index: 30;
-  width: 100%;
+  width: calc(100% - 17px);
 }
 .main-header button {
   display: inline-block;
@@ -79,7 +79,7 @@ body {
   position: fixed;
   height: 80px;
   z-index: 40;
-  width: 100%;
+  width: calc(100% - 17px);
   top: 80px;
   transition: top 0.2s ease-in-out;
   background-color: #fff;
@@ -148,8 +148,12 @@ body {
   border: 0px solid transparent;
 }
 
-#support-btn:hover, #contact-btn:hover, #search-btn:hover, #telephone-btn:hover, #menu-btn:hover {
+#support-btn:hover, #contact-btn:hover, #telephone-btn:hover, #menu-btn:hover {
   filter: brightness(90%);
+}
+
+#search-btn:hover {
+  background-color: #7e808a;
 }
 
 #query:focus {
@@ -174,7 +178,7 @@ body {
   align-items: flex-end;
   letter-spacing: 0.4px;
   position: fixed;
-  width: 100%;
+  width: calc(100% - 17px);
   z-index: 50;
   top: 120px;
   transition: top 0.2s ease-in-out;
@@ -608,6 +612,10 @@ body {
 }
 .slider-container img:hover {
   filter: grayscale(0);
+}
+
+.img-container {
+  width: 100vw;
 }
 
 /*! Welcome */
@@ -1160,6 +1168,7 @@ input[type=checkbox] {
   width: 1143px;
   margin: auto;
   white-space: nowrap;
+  line-height: 20px;
 }
 .footer-cont .footer-bottom span {
   display: inline-block;
@@ -2362,6 +2371,13 @@ dialog::backdrop {
 }
 
 html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  overflow: auto;
+  height: 100%;
   overflow-x: hidden;
 }
 

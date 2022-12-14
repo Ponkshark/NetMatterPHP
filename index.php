@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="scss_and_stylesheet/style.css">
     <link href="css/hamburgers.css" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/d8fc1f1b84.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
@@ -31,7 +32,29 @@
 <?php include 'templates/header.php'; ?>
 
 <div class="info-container">
-    <div class="img-container"><img src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-oaVs.jpg" id="main-img" alt="Two men smiling to the side"></div>
+    <div class="slider-container2 owl-carousel" id="owl-1">
+        <div class="img-container">
+            <img src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-oaVs.jpg" id="main-img" alt="Two men smiling to the side">
+        </div>
+        <div class="img-container">
+            <img src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-gKfQ.jpg" id="main-img">
+        </div>
+        <div class="img-container">
+            <img src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-K0pn.jpg" id="main-img">
+        </div>
+        <div class="img-container">
+            <img src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-YLei.png" id="main-img">
+        </div>
+        <div class="img-container">
+            <img src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-O67Y.jpg" id="main-img">
+        </div>
+        <div class="img-container">
+            <img src="https://www.netmatters.co.uk/uploads/pages/1/home-gay8.png" id="main-img">
+        </div>
+        <div class="img-container">
+            <img src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-6yTp.png" id="main-img">
+        </div>
+    </div>
     <div class="info-text-cont">
     <div class="info-text">
     <h1>The East Of England's Leading Technology Company</h1>

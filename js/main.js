@@ -2,7 +2,7 @@
 // Carousel
 
 $(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
+  $(".slider-container").owlCarousel({
     loop: true,
     margin: 100,
     autoWidth: true,
@@ -10,6 +10,15 @@ $(document).ready(function(){
       autoplayTimeout: 3000,
       autoplayHoverPause: true,
       items: 8
+  });
+  $("#owl-1").owlCarousel({
+    loop: true,
+    autoWidth: true,
+    items: 1,
+    autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+
   });
 });
 
@@ -41,17 +50,23 @@ window.onscroll = function() {
 
 function openNav() {
   document.getElementById("sidebar-inner-id").style.right = "0px";
-  document.getElementById("body-id").style.marginRight = "276px";
-  document.getElementById("body-id").style.marginLeft = "-276px";
-  document.getElementById("body-id").style.overflow = "hidden";
+  if ($(window).width() < 992){
+    document.getElementById("body-id").style.marginRight = "276px";
+    document.getElementById("body-id").style.marginLeft = "-276px";
+  } else {
+    document.getElementById("body-id").style.marginRight = "350px";
+    document.getElementById("body-id").style.marginLeft = "-350px";
+  }
+  document.getElementsByTagName("html").style.overflow = "hidden";
+  document.getElementsByTagName("html").style.height = "100%";
+  document.getElementsByTagName("body").style.overflow = "auto";
+  document.getElementsByTagName("body").style.height = "100%";
 }
 
 function closeNav() {
   document.getElementById("sidebar-inner-id").style.right = "-350px";
-  document.getElementById("body-id").style.marginRight = "-20px";
+  document.getElementById("body-id").style.marginRight = "0";
   document.getElementById("body-id").style.marginLeft = "0";
-  document.getElementById("body-id").style.overflow = "scroll";
-  document.getElementById("body-id").style.overflowX = "hidden";
 }
 
 //Cookies

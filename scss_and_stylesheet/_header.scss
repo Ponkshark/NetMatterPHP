@@ -27,7 +27,7 @@ body {
     transition: top 0.2s ease-in-out;
     background-color: white;
     z-index: 30;
-    width: 100%;
+    width: calc(100% - 17px);
     button {
         display: inline-block;
         height: 56px;
@@ -82,7 +82,7 @@ body {
     position: fixed;
     height: 80px;
     z-index: 40;
-    width: 100%;
+    width: calc(100% - 17px);
     top: 80px;
     transition: top 0.2s ease-in-out;
     background-color: $white;
@@ -164,8 +164,12 @@ body {
 // }
 
 
-#support-btn:hover, #contact-btn:hover, #search-btn:hover, #telephone-btn:hover, #menu-btn:hover {
+#support-btn:hover, #contact-btn:hover, #telephone-btn:hover, #menu-btn:hover {
     filter: brightness(90%)
+}
+
+#search-btn:hover {
+    background-color: #7e808a;
 }
 
 #query:focus {
