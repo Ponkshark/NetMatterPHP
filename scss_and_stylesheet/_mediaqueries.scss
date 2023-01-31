@@ -233,7 +233,13 @@
     }
 
     .img-container {
-        filter: brightness(50%);
+        img {
+            filter: brightness(50%);
+        }
+    }
+
+    .info-text-cont {
+        justify-content: center;
     }
 
     .serv-container {

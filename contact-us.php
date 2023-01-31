@@ -195,7 +195,7 @@ if(isset($_POST["submit"]))
             </div>
             <div class="name-email-item2">
                 <label for="yourmessage" class="required">Message</label><br>
-                <input type="text" id="yourmessage" <?php echo $message_error; ?> name="yourmessage" value="<?php echo isset($_POST["yourmessage"]) ? $_POST["yourmessage"] : ''; ?>"><br>
+                <textarea type="textarea" id="yourmessage" <?php echo $message_error; ?> name="yourmessage" value="<?php echo isset($_POST["yourmessage"]) ? $_POST["yourmessage"] : ''; ?>"></textarea>
             </div>
             <label class="checkbox-item2">
                 <input type="checkbox" id="marketing" name="marketing" value="IAccept">

@@ -329,7 +329,7 @@ body {
 
 .info-text-cont {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .info-text {
@@ -337,7 +337,7 @@ body {
   z-index: 4;
   position: absolute;
   top: 51%;
-  margin-left: 3%;
+  margin-left: 10%;
   margin-right: 3%;
   transform: translate(0%, -50%);
 }
@@ -363,6 +363,102 @@ body {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.owl-dots {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(-50px);
+}
+
+.owl-dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px 10px;
+  background: #d6d6d6 !important;
+  background-color: hsla(0deg, 0%, 100%, 0.5) !important;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 0.2s ease;
+  border-radius: 30px;
+  z-index: 5000;
+  position: relative;
+  text-align: center;
+  opacity: 100%;
+}
+
+.owl-dot.active {
+  background: white !important;
+}
+
+.owl-dot.active:after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border: white 2px solid;
+  border-radius: 100%;
+}
+
+.hero-button {
+  color: white;
+  padding: 20px 20px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  margin-top: 30px;
+}
+.hero-button:hover {
+  cursor: pointer;
+}
+
+.grey {
+  background-color: #67809f;
+}
+.grey:hover {
+  background-color: #566c88;
+}
+
+.purple {
+  background-color: #926fa7;
+}
+.purple:hover {
+  background-color: #7e57a0;
+}
+
+.orange {
+  background-color: #d64541;
+}
+.orange:hover {
+  background-color: #c42e2a;
+}
+
+.pink {
+  background-color: #f62459;
+}
+.pink:hover {
+  background-color: #e80a42;
+}
+
+.green {
+  background-color: #2ecc71;
+}
+.green:hover {
+  background-color: #26ab5f;
+}
+
+.blue {
+  background-color: #4183d7;
+}
+.blue:hover {
+  background-color: #2a6ec6;
 }
 
 /*! Our Services */
@@ -1444,8 +1540,11 @@ input[type=checkbox] {
   .info-container {
     text-align: center;
   }
-  .img-container {
+  .img-container img {
     filter: brightness(50%);
+  }
+  .info-text-cont {
+    justify-content: center;
   }
   .serv-container .serv-header {
     width: 718px;

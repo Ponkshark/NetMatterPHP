@@ -34,32 +34,75 @@
     <div class="slider-container2 owl-carousel" id="owl-1">
         <div class="img-container">
             <img src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-oaVs.jpg" id="main-img" alt="Two men smiling to the side">
+            <div class="info-text-cont">
+                <div class="info-text">
+                    <h1>The East Of England's Leading Technology Company</h1>
+                    <p>Performance-driven digital and technology services<br>with complete transparency.</p>
+                    <button class="hero-button purple">Why choose us?  <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
         </div>
         <div class="img-container">
             <img src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-gKfQ.jpg" id="main-img">
+            <div class="info-text-cont">
+                <div class="info-text">
+                    <h1>Bespoke Software</h1>
+                    <p>Delivering expert bespoke software <br>solutions across a range of industries.</p>
+                    <button class="hero-button grey">Find out more  <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
         </div>
         <div class="img-container">
             <img src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-K0pn.jpg" id="main-img">
+            <div class="info-text-cont">
+                <div class="info-text">
+                    <h1>IT Support</h1>
+                    <p>Fast and cost-effective IT support <br>services for your business.</p>
+                    <button class="hero-button blue">Find out more  <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
         </div>
         <div class="img-container">
             <img src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-YLei.png" id="main-img">
+            <div class="info-text-cont">
+                <div class="info-text">
+                    <h1>Digital Marketing</h1>
+                    <p>Generating your new business through <br>results-driven marketing activities.</p>
+                    <button class="hero-button green">Find out more  <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
         </div>
         <div class="img-container">
             <img src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-O67Y.jpg" id="main-img">
+            <div class="info-text-cont">
+                <div class="info-text">
+                    <h1>Telecoms Services</h1>
+                    <p>A new approach to connectivity, see <br>how we can help your business.</p>
+                    <button class="hero-button orange">Find out more  <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
         </div>
         <div class="img-container">
             <img src="https://www.netmatters.co.uk/uploads/pages/1/home-gay8.png" id="main-img">
+            <div class="info-text-cont">
+                <div class="info-text">
+                    <h1>Web Design</h1>
+                    <p>For businesses looking to make a strong <br>and effective first impression.</p>
+                    <button class="hero-button purple">Find out more  <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
         </div>
         <div class="img-container">
             <img src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-6yTp.png" id="main-img">
+            <div class="info-text-cont">
+                <div class="info-text">
+                    <h1>Cyber Security</h1>
+                    <p>Keeping businesses and their customers <br>sensitive information protected.</p>
+                    <button class="hero-button pink">Find out more  <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="info-text-cont">
-    <div class="info-text">
-    <h1>The East Of England's Leading Technology Company</h1>
-    <p>Performance-driven digital and technology services<br>with complete transparency.</p>
-    </div></div>
-
 </div>
 
 

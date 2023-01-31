@@ -15,6 +15,7 @@ $(document).ready(function(){
     loop: true,
     autoWidth: true,
     items: 1,
+    dots: true,
     autoplay: true,
       autoplayTimeout: 3000,
       autoplayHoverPause: true,
@@ -113,22 +114,27 @@ function validateForm(inputText) {
   var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
   let x = document.forms["newsletterForm"]["yourname2"].value;
   if (x==null || x == "") {
+    document.getElementById(yourname2).style = "border: 1px solid #d64541"; 
     return false;
   }
   let y = document.forms["newsletterForm"]["youremail2"].value;
   if (y==null || y == "") {
+      document.getElementById(youremail2).style = "border: 1px solid #d64541"; 
       return false;
   }
   let z = document.forms["newsletterForm"]["yourtelephone"].value;
   if (z==null || z == "") {
+      document.getElementById(yourtelephone).style = "border: 1px solid #d64541"; 
       return false;
   }
   let v = document.forms["newsletterForm"]["yoursubject"].value;
   if (v==null || v == "") {
+      document.getElementById(yoursubject).style = "border: 1px solid #d64541"; 
       return false;
   }
   let w = document.forms["newsletterForm"]["yourmessage"].value;
   if (w==null || w == "") {
+      document.getElementById(yourmessage).style = "border: 1px solid #d64541"; 
       return false;
   }
   if(inputText.value.match(mailformat)) {
